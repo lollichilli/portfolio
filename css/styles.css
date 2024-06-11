@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+    background-color: rgb(221, 221, 251);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 86%;
+    width: 100%;
+    background: linear-gradient(-45deg, #6b5fc4, #e7ab3c, #64b9d8, #4cd1b2);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    backdrop-filter: blur(8px);
+    overflow: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+    background-color: rgb(221, 221, 251);
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

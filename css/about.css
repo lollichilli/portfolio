@@ -1,0 +1,39 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.hi-text {
+    margin-left: 1.5rem;
+    overflow: hidden;
+    flex-direction: row;
+    white-space: nowrap;
+    font-size: 4rem;
+    animation: typing 4s steps(15, end) forwards;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 1.5rem;
+    justify-content: center;
+    text-transform: none;
+    color: black;
+    white-space: pre-line;
+    min-width: 60%;
+}
+
+ul {
+    padding-left: 40px;
+}
